@@ -22,8 +22,11 @@ Nathália Cericatto, Luiz Filipe de Lima Ávila, Miqueias Allisson Freire Galdin
 - Resultados encontrados
 
 ## 🔧 Versionamento
-- Estratégia de branches
-- Link para PRs e commits
+Seguimos o modelo de sempre utilizarmos Pull Requests para main.
+Então, para cada feature, foi realizada a criação de uma nova branch com nome e commit descritivo
+
+[Pull Request realizados](https://github.com/Nathuyy/A3-Qualidade-de-Software/pulls?q=is%3Apr+is%3Aclosed)
+[Commits Realizados - branch main](https://github.com/Nathuyy/A3-Qualidade-de-Software/commits/main/)
 
 ## 🚀 Execução
 Passo a passo para rodar o sistema localmente e os testes.
