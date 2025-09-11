@@ -4,9 +4,7 @@
 Breve descrição do sistema, objetivo, escopo.
 
 ## 👥 Equipe
-Nathália Cericatto
-Luiz Filipe de Lima Ávila
-Miqueias Allisson Freire Galdino
+Nathália Cericatto, Luiz Filipe de Lima Ávila, Miqueias Allisson Freire Galdino
 
 ## 🧪 Testes
 - Plano de testes (tabela)
