@@ -46,7 +46,9 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 ---
 
 ## 👥 Equipe
-Nathália Cericatto, Luiz Filipe de Lima Ávila, Miqueias Allisson Freire Galdino
+- Nathália Cericatto, 12924110993
+- Luiz Filipe de Lima Ávila, 1291419212
+- Miqueias Allisson Freire Galdino, 1292414297
 
 ## 🧪 Testes
 - Plano de testes (tabela)
