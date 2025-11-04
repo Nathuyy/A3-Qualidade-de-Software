@@ -49,6 +49,7 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 - Nathália Cericatto, 12924110993
 - Luiz Filipe de Lima Ávila, 1291419212
 - Miqueias Allisson Freire Galdino, 1292414297
+- Gabriel Machado de Matos, 1292326181
 
 ## 🧪 Testes
 
