@@ -58,24 +58,15 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 | ID  | Módulo        | Caso de Teste                            | Justificativa                                 |
 | --- | ------------- | ---------------------------------------- | --------------------------------------------- |
 | T01 | Backend - API | Criar sala via `POST /rooms`             | Essencial para iniciar o fluxo do jogo        |
-| T02 | Backend - API | Listar salas via `GET /rooms`            | Necessário para jogadores encontrarem salas   |
-| T03 | Backend - WS  | Conectar usuário a uma sala (`joinRoom`) | Valida a entrada e sincronização de jogadores |
-| T05 | Backend - WS  | Enviar ataque (`attack`)                 | Core da mecânica do jogo                      |
-| T06 | Backend - WS  | Vitória do jogador                       | Valida condição de término do jogo            |
-| T09 | Frontend Jogo | Posicionar barcos                        | Etapa crítica antes da batalha começar        |
-| T10 | Frontend Jogo | Realizar ataque no tabuleiro             | Experiência principal de interação            |
+| T02 | Backend - WS  | Conectar usuário a uma sala (`joinRoom`) | Valida a entrada e sincronização de jogadores |
+| T03 | Backend - WS  | Enviar ataque (`attack`)                 | Core da mecânica do jogo                      |
+| T04 | Backend - WS  | Vitória do jogador                       | Valida condição de término do jogo            |
+| T05 | Frontend Jogo | Posicionar barcos                        | Etapa crítica antes da batalha começar        |
 
-## 🤖 Testes Automatizados
-- Ferramentas utilizadas
-- Como rodar os testes
+## 🤖 Estratégia:
+- Testes Automatizados
+- Testes de sistema
 
-## 📊 Métricas e Estimativas
-- Métricas aplicadas (ex: cobertura, defeitos, complexidade)
-- Estimativas de esforço
-
-## 🔍 Revisão Técnica
-- Técnicas usadas (pareamento, SonarQube, Lint)
-- Resultados encontrados
 
 ## 🔧 Versionamento
 Seguimos o modelo de sempre utilizarmos Pull Requests para main.
