@@ -63,6 +63,18 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 | T04 | Backend - WS  | Vitória do jogador                       | Valida condição de término do jogo            |
 | T05 | Frontend Jogo | Posicionar barcos                        | Etapa crítica antes da batalha começar        |
 
+- T01: Criar sala: não foi possível realizar os testes de caixa preta;
+
+- T02: Conectar usuário a uma sala:
+Podem ser conectados até 2 usuário:
+Equivalência: 2 são válidos;
+Fronteira: 1 e 3 não são válido
+
+- T03: Enviar ataque: não foi possível realizar os testes de caixa preta;
+- T04: Vitória do jogador: não foi possível realizar os testes de caixa preta, o jogodar só ganha depois de achar as 10 posições do inimigo;
+- T05: Posicionar barcos: não foi possível realizar os testes de caixa preta, o jogo não inicia até as 20 posições serem preenchidas
+  
+  
 ## 🤖 Estratégia:
 - Testes Automatizados
 - Testes de sistema
