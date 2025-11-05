@@ -53,7 +53,7 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 
 ## 🧪 Testes
 
-# 🧪 Testes Caixa Preta:
+# 🧪 Casos de teste:
 
 | ID  | Módulo        | Caso de Teste                            | Justificativa                                 |
 | --- | ------------- | ---------------------------------------- | --------------------------------------------- |
