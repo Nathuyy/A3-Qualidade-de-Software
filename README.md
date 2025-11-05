@@ -53,7 +53,7 @@ A experiência multiplayer ocorre em tempo real, permitindo:
 
 ## 🧪 Testes
 
-# 🧪 Plano de Testes - Batalha Naval Multiplayer
+# 🧪 Testes Caixa Preta:
 
 | ID  | Módulo        | Caso de Teste                            | Justificativa                                 |
 | --- | ------------- | ---------------------------------------- | --------------------------------------------- |
