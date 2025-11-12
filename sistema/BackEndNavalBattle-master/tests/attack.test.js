@@ -2,9 +2,8 @@ const request = require('supertest');
 const express = require('express');
 const bodyParser = require('body-parser');
 const { initializeGame, joinGame } = require('./../controllers/lobbyGame');
-const { startBattle, handleAttack, getGameState } = require('../controllers/gameController'); // altere o nome conforme o seu arquivo real
+const { startBattle, handleAttack, getGameState } = require('../controllers/gameController');
 
-// ⚙️ Monta o app express
 const app = express();
 app.use(bodyParser.json());
 app.post('/initialize', initializeGame);
@@ -16,7 +15,6 @@ app.get('/state/:roomId', getGameState);
 describe('POST /attack', () => {
 
   beforeEach(async () => {
-    // Cria a sala e adiciona dois jogadores
     await request(app)
       .post('/initialize')
       .send({ roomId: 'sala123', nameTeam: 'Equipe Alpha' });
@@ -25,7 +23,6 @@ describe('POST /attack', () => {
       .post('/join')
       .send({ roomId: 'sala123', nameTeam: 'Equipe Beta' });
 
-    // Inicia a batalha
     await request(app)
       .post('/startBattle/sala123')
       .send();
@@ -51,12 +48,10 @@ describe('POST /attack', () => {
   });
 
   it('Não deve permitir atacar a mesma posição duas vezes', async () => {
-    // Primeiro ataque
     await request(app)
       .post('/attack/sala123/1')
       .send({ row: 1, col: 1 });
 
-    // Segundo ataque na mesma célula
     const res = await request(app)
       .post('/attack/sala123/1')
       .send({ row: 1, col: 1 });
