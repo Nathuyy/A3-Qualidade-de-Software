@@ -3,7 +3,6 @@ const express = require('express');
 const { initializeGame } = require('./../controllers/lobbyGame');
 const bodyParser = require('body-parser');
 
-// Cria um app express apenas para teste
 const app = express();
 app.use(bodyParser.json());
 app.post('/initialize', initializeGame);
@@ -17,7 +16,7 @@ describe('POST /initialize', () => {
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('message', 'Sala criada com sucesso.');
     expect(response.body).toHaveProperty('playerId', 1);
-    expect(response.body).toHaveProperty('Jogador:', 'Equipe Alpha');
+    expect(response.body).toHaveProperty('jogador', 'Equipe Alpha');
   });
 
   it('Deve retornar erro se faltar o roomId', async () => {

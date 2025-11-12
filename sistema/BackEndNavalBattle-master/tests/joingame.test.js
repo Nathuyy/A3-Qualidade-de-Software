@@ -3,7 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { initializeGame, joinGame } = require('./../controllers/lobbyGame');
 
-// Monta app Express para testes
 const app = express();
 app.use(bodyParser.json());
 app.post('/initialize', initializeGame);
@@ -11,7 +10,6 @@ app.post('/join', joinGame);
 
 describe('POST /join', () => {
   beforeEach(async () => {
-    // Cria uma sala antes de cada teste que precisa dela
     await request(app)
       .post('/initialize')
       .send({ roomId: 'sala123', nameTeam: 'Equipe Alpha' });
@@ -25,7 +23,7 @@ describe('POST /join', () => {
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('message', 'Jogador 2 entrou na sala.');
     expect(response.body).toHaveProperty('playerId', 2);
-    expect(response.body).toHaveProperty('Jogador:', 'Equipe Beta');
+    expect(response.body).toHaveProperty('jogador', 'Equipe Beta');
   });
 
   it('Deve retornar erro se faltar o roomId', async () => {
@@ -56,12 +54,10 @@ describe('POST /join', () => {
   });
 
   it('Deve retornar erro se a sala já estiver cheia', async () => {
-    // Primeiro jogador 2 entra com sucesso
     await request(app)
       .post('/join')
       .send({ roomId: 'sala123', nameTeam: 'Equipe Beta' });
 
-    // Tentativa de um terceiro jogador
     const response = await request(app)
       .post('/join')
       .send({ roomId: 'sala123', nameTeam: 'Equipe Gama' });

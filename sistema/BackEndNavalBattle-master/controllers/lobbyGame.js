@@ -24,7 +24,11 @@ const initializeGame = (req, res) => {
     currentTurn: null,
   };
 
-  res.status(200).json({ message: 'Sala criada com sucesso.', playerId: 1, message: "Jogador:", nameTeam });
+  res.status(200).json({ 
+    message: 'Sala criada com sucesso.', 
+    playerId: 1, 
+    jogador: nameTeam 
+  });
 };
 
 const joinGame = (req, res) => {
@@ -50,7 +54,11 @@ const joinGame = (req, res) => {
 
   game.players[2] = { id: 2, namePlayer: nameTeam, board: createBoard(), shipsPlaced: false };
 
-  res.status(200).json({ message: 'Jogador 2 entrou na sala.', playerId: 2, message: "Jogador:", nameTeam});
+  res.status(200).json({ 
+    message: 'Jogador 2 entrou na sala.', 
+    playerId: 2, 
+    jogador: nameTeam 
+  });
 };
 
 module.exports = { initializeGame, joinGame };
